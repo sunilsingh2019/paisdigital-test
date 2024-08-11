@@ -1,0 +1,6 @@
+name: my-project
+recipe: lamp
+config:
+  webroot: .
+  php: '7.4' # Adjust the PHP version as needed
+  database: mysql:5.7 # Adjust the MySQL version as needed

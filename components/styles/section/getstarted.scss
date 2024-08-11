@@ -1,0 +1,64 @@
+.section-getstarted {
+    padding: 140px 0 142px;
+    background-color: $gray;
+
+    @media (min-width: 992px) {
+        min-height: 500px;
+    }
+
+    @media (max-width: 991px) {
+        padding: 85.8px 0 96px;
+        min-height: 790px;
+    }
+
+    .shapes {
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        .circ-collec {
+            position: absolute;
+            top: -118.5px;
+            right: -269.8px;
+            width: 632.51px;
+            height: 796.78px;
+
+            img {
+                position: absolute;
+            }
+
+            .circ {
+                &-blue-purple {
+                    top: 0;
+                    left: 0;
+                    width: 77.12%;
+                }
+
+                &-dashed {
+                    bottom: 0;
+                    right: 0;
+                    width: 93.239%;
+                }
+
+                &-orange-red {
+                    bottom: 0;
+                    left: 0;
+                    width: 38.68%;
+                }
+            }
+        }
+    }
+}
+
+
+.getstarted {
+    max-width: 770px;
+
+    &-option {
+        margin-bottom: 28px;
+    }
+
+    .form-step-count {
+        display: none;
+    }
+}

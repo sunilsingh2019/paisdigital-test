@@ -1,0 +1,28 @@
+.pbaZRPUJ_0 {
+    stroke-dasharray: 884 886;
+    stroke-dashoffset: 885;
+}
+
+.anim-start .pbaZRPUJ_0 {
+    animation: pbaZRPUJ_draw 2000ms linear 500ms forwards;
+}
+
+@keyframes pbaZRPUJ_draw {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes pbaZRPUJ_fade {
+    0% {
+        stroke-opacity: 1;
+    }
+
+    94.44444444444444% {
+        stroke-opacity: 1;
+    }
+
+    100% {
+        stroke-opacity: 0;
+    }
+}

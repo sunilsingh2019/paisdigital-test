@@ -1,0 +1,49 @@
+.section-quantum {
+    padding: 266px 0 215px;
+
+    @media (max-width: 991px) {
+        padding: 78.4px 0 73.7px;
+    }
+
+    .shapes {
+        @media (max-width: 991px) {
+            display: none;
+        }
+
+        .circ-dashed {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 510px;
+        }
+    }
+}
+
+.quantum {
+    .logo {
+        width: 308px;
+        margin-bottom: 50px;
+
+        @media (max-width: 991px) {
+            width: 318px;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+
+    .row {
+        margin-left: -32px;
+        margin-right: -32px;
+    }
+
+    [class^="col-"] {
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}

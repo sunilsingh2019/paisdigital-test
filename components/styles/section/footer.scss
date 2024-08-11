@@ -1,0 +1,105 @@
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    .circ-collec {
+        position: absolute;
+        bottom: -241px;
+        right: 0;
+        width: 670px;
+        height: 569px;
+
+        @media (max-width: 991px) {
+            bottom: -148.5px;
+            left: 36px;
+            right: auto;
+            width: 511.92px;
+            height: 340.55px;
+        }
+
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .circ {
+
+            &-dashed,
+            &-orange-red {
+                position: absolute;
+            }
+
+            &-dashed {
+                top: 0;
+                right: 0;
+                width: 83.58%;
+
+                @media (max-width: 991px) {
+                    width: 474.68px;
+                }
+            }
+
+            &-orange-red {
+                bottom: 0;
+                left: 0;
+                width: 62.39%;
+
+                @media (max-width: 991px) {
+                    width: 281.79px;
+                }
+            }
+        }
+    }
+
+    &-top {
+        padding: 133px 0 127px;
+
+        @media (max-width: 991px) {
+            padding: 90px 0 56.7px;
+
+            .col-lg-6:not(:last-child) {
+                margin-bottom: 92.5px;
+            }
+
+            .logo {
+
+                &-demo,
+                &-dicker {
+                    margin-top: 35px;
+                }
+
+                &-demo {
+                    width: 220px;
+                    height: 41.48px;
+                }
+
+                &-dicker {
+                    width: 108.83px;
+                    height: 41.35px;
+                }
+            }
+        }
+    }
+
+    &-bot {
+        padding: 43px 0 50px;
+        border-top: 1px solid #707070;
+
+        @media (max-width: 991px) {
+            padding: 32px 0 172px;
+        }
+
+        h2 {
+            text-transform: uppercase;
+            margin-bottom: 0;
+
+            @media (max-width: 991px) {
+                font-size: 20px;
+            }
+
+            sup {
+                font-size: 50%;
+            }
+        }
+    }
+}

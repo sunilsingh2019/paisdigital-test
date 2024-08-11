@@ -1,0 +1,69 @@
+.logos {
+    display: flex;
+    flex-wrap: wrap;
+
+    > * {
+        &:not(:last-child) {
+            position: relative;
+            margin-right: 45px;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: -22.8px;
+                transform: translateY(-50%);
+                width: 1px;
+                height: 100%;
+                background-color: #707070;
+            }
+
+            @media (max-width: 767px) {
+                margin-right: 28px;
+
+                &::after {
+                    right: -14px;
+                }
+            }
+        }
+    }
+}
+
+.logo {
+
+    &-demo,
+    &-dicker,
+    &-quantum {
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &-demo {
+        width: 209px;
+        height: 39px;
+        margin-right: 45px;
+
+        @media (max-width: 767px) {
+            width: 133.13px;
+            height: 25.11px;
+            margin-right: 28.6px;
+        }
+    }
+
+    &-dicker {
+        width: 103px;
+        height: 39px;
+
+        @media (max-width: 767px) {
+            width: 65.88px;
+            height: 25.03px;
+        }
+    }
+
+    &-quantum {
+        width: 168px;
+        height: 60px;
+    }
+}

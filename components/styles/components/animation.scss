@@ -1,0 +1,43 @@
+.delay-half {
+    -webkit-animation-delay: .5s;
+    animation-delay: .5s;
+}
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+@keyframes fadeInLeft{
+    0% {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+    100% {
+        opacity: 1;
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+}
+// Custom AOS.js
+[data-aos='perspective'] {
+    opacity: 0;
+    transform: perspective(300px) translateY(90px) rotateX(10deg);
+    &.aos-animate {
+        opacity: 1;
+        transform: none;
+    }
+}
+[data-aos='fade-left'] {
+    opacity: 0;
+    &.aos-animate {
+        opacity: 1;
+        transform: none;
+    }
+}
+

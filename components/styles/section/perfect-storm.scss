@@ -1,0 +1,101 @@
+.section-perfectstorm {
+    color: #fff;
+    background-color: $text-light;
+    padding: 123px 0;
+
+    @media (max-width: 991px) {
+        z-index: 1;
+        padding: 60px 0 380px;
+
+        &::before {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: calc(200% - 70px);
+            height: 100%;
+            background-image: linear-gradient(60deg, rgba(#000, .3) 0%, rgba(#fff, .52) 80%, transparent 100%);
+        }
+
+    }
+}
+
+.perfectstorm {
+    .content {
+        z-index: 1;
+        position: relative;
+        max-width: 480px;
+
+        @media (min-width: 992px) {
+            margin-left: auto;
+        }
+
+        p {
+            color: #fff;
+        }
+    }
+
+    .media {
+        position: absolute;
+        top: -246px;
+        left: -421px;
+        width: 1274px;
+        height: 1222px;
+
+        @media (max-width: 1350px) {
+            top: -220px;
+            left: -390px;
+            width: 980px;
+            height: 940px;
+        }
+
+        @media (max-width: 991px) {
+            width: 824.25px;
+            height: 703.8px;
+            top: auto;
+            bottom: -182px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        img {
+            position: absolute;
+        }
+
+        &-dashed {
+            top: 20.13%;
+            right: 0;
+            width: 47%;
+
+            @media (max-width: 991px) {
+                top: 117px;
+                width: 368px;
+                transform: rotate(202deg) !important;
+            }
+        }
+
+        &-swiggly {
+            top: 0;
+            left: 0;
+            width: 97.72%;
+
+            @media (max-width: 991px) {
+                width: 717.6px;
+            }
+        }
+
+        &-laptop {
+            top: 20.94%;
+            right: 4.79%;
+            width: 78.335%;
+
+            @media (max-width: 991px) {
+                top: 193px;
+                left: 130px;
+                right: auto;
+                width: 521px;
+            }
+        }
+    }
+}
